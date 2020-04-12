@@ -8,6 +8,14 @@
   },
   "author": "dracoonghost",
   "license": "ISC",
+  "repository": "https://github.com/deependrasingh93/mongo-elastic-connector",
+  "keywords": [
+    "elasticsearch",
+    "mongoDB",
+    "mongo-elastic",
+    "connector",
+    "elasticsearch sync"
+  ],
   "dependencies": {
     "@elastic/elasticsearch": "^7.6.1",
     "mongodb": "^3.5.5"
