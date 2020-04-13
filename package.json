@@ -1,13 +1,13 @@
 {
   "name": "mongo-elastic-connector",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A package to dump mongo data in elasticsearch and also sync real time updates between the 2 databases",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dracoonghost",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/deependrasingh93/mongo-elastic-connector",
   "keywords": [
     "elasticsearch",

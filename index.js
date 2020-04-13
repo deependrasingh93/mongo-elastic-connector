@@ -16,6 +16,8 @@ class Sync
     elasticPassword;
 
     initElastic() {
+        console.log(this.elasticURL, this.elasticPassword, this.elasticUsername);
+        
         return new Promise((resolve, reject)=>{
             const client = new Client({
 
@@ -36,7 +38,7 @@ class Sync
                     }
     
                 } else {
-                    console.log('Elastic si ready!!');
+                    console.log('Elastic is ready!!');
                     resolve (client);
                 }
                 })
@@ -62,6 +64,8 @@ class Sync
     }
 
     startWatcher(){
+        console.log('Sync is started!!');
+        
         this.db.watch({fullDocument:'updateLookup'}).on('change', (data)=>{
             console.log(data);
             let index = data.ns.coll.toLowerCase()
